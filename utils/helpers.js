@@ -3,6 +3,13 @@ import { View } from 'react-native'
 import { FontAwesome, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons'
 import { black } from './colors'
 
+
+export function getDailyReminderValue () {
+  return {
+    today: "👋 Don't forget to log your data today!"
+  }
+}
+
 export function isBetween (num, x, y) {
   if (num >= x && num <= y) {
     return true
@@ -58,7 +65,7 @@ export function getMetricMetaInfo (metric) {
           <View>
             <MaterialIcons
               name='directions-run'
-              color={white}
+              color={black}
               size={35}
             />
           </View>
@@ -76,7 +83,7 @@ export function getMetricMetaInfo (metric) {
           <View>
             <MaterialCommunityIcons
               name='bike'
-              color={white}
+              color={black}
               size={32}
             />
           </View>
@@ -94,7 +101,7 @@ export function getMetricMetaInfo (metric) {
           <View>
             <MaterialCommunityIcons
               name='swim'
-              color={white}
+              color={black}
               size={35}
             />
           </View>
@@ -112,7 +119,7 @@ export function getMetricMetaInfo (metric) {
           <View>
             <FontAwesome
               name='bed'
-              color={white}
+              color={black}
               size={30}
             />
           </View>
@@ -130,7 +137,7 @@ export function getMetricMetaInfo (metric) {
           <View>
             <MaterialCommunityIcons
               name='food'
-              color={white}
+              color={black}
               size={35}
             />
           </View>
